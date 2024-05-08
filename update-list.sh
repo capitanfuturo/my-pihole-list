@@ -52,6 +52,9 @@ wget http://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/ -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/malwaredomains_full.txt -O ->> list.txt
 wget https://raw.github.com/liamja/Prebake/master/obtrusive.txt -O ->> list.txt
 wget https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt -O ->> list.txt
+wget https://phishing.army/download/phishing_army_blocklist_extended.txt -O ->> list.txt
+wget https://v.firebog.net/hosts/Easylist.txt -O ->> list.txt
+wget https://v.firebog.net/hosts/AdguardDNS.txt -O ->> list.txt
 
 # filter non url content and eliminate duplicates
 sed -e 's/\r//' -e '/^0.0.0.0/!d' -e '/localhost/d' -e 's/0.0.0.0//' -e 's/ \+/\t/' -e 's/#.*$//' -e 's/[ \t]*$//' < list.txt | sort -u > list2.txt
