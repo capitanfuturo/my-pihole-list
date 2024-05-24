@@ -16,13 +16,10 @@ wget https://easylist-downloads.adblockplus.org/easylistdutch.txt -O ->> list.tx
 wget https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/easylistgermany.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/israellist+easylist.txt -O ->> list.txt
-wget https://raw.githubusercontent.com/ABPIsrael/EasyListHebrew/master/EasyListHebrew.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/easylistitaly.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt -O ->> list.txt
-wget http://margevicius.lt/easylistlithuania.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt -O ->> list.txt
-wget https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/liste_ar+liste_fr+easylist.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/Liste_AR.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/liste_fr+easylist.txt -O ->> list.txt
