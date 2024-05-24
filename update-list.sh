@@ -21,7 +21,7 @@ wget https://easylist-downloads.adblockplus.org/easylistitaly.txt -O ->> list.tx
 wget https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/liste_ar+liste_fr+easylist.txt -O ->> list.txt
-wget https://easylist-downloads.adblockplus.org/Liste_AR.txt -O ->> list.txt
+wget https://easylist-downloads.adblockplus.org/liste_ar.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/liste_fr+easylist.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/liste_fr.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/rolist+easylist.txt -O ->> list.txt
@@ -34,7 +34,6 @@ wget https://easylist-downloads.adblockplus.org/easyprivacy.txt -O ->> list.txt
 wget http://adblock.gardar.net/is.abp.txt -O ->> list.txt
 wget http://www.void.gr/kargig/void-gr-filters.txt -O ->> list.txt
 wget http://bit.ly/11QrCfx -O ->> list.txt
-wget http://adblock.dajbych.net/adblock.txt -O ->> list.txt
 wget http://gurud.ee/ab.txt -O ->> list.txt
 wget https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt -O ->> list.txt
 wget http://pgl.yoyo.org/adservers/serverlist.php?hostformat -O ->> list.txt
@@ -42,11 +41,9 @@ wget https://adblock.dk/block.csv -O ->> list.txt
 wget http://noads.it/filtri.txt -O ->> list.txt
 wget https://raw.githubusercontent.com/yous/YousList/master/youslist.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/antiadblockfilters.txt -O ->> list.txt
-wget https://easylist-downloads.adblockplus.org/adwarefilters.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt -O ->> list.txt
 wget https://easylist-downloads.adblockplus.org/fanboy-social.txt -O ->> list.txt
 wget http://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/ -O ->> list.txt
-wget https://easylist-downloads.adblockplus.org/malwaredomains_full.txt -O ->> list.txt
 wget https://raw.github.com/liamja/Prebake/master/obtrusive.txt -O ->> list.txt
 wget https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt -O ->> list.txt
 wget https://phishing.army/download/phishing_army_blocklist_extended.txt -O ->> list.txt
