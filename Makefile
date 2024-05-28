@@ -8,3 +8,7 @@ help:
 pihole-adlist-builder:
 	docker compose build
 	docker compose run --rm pihole-adlist-builder
+
+##build: @ build and push
+build:
+	sh update-list.sh

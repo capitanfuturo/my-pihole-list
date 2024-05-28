@@ -55,7 +55,3 @@ npm run build && npm run start
 # filter non url content and eliminate duplicates
 cat list.txt | tr -d " \t" > adlist.txt
 rm -rf list.txt
-
-git add .
-git commit -m "update list"
-git push
