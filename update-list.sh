@@ -50,10 +50,11 @@ wget https://phishing.army/download/phishing_army_blocklist_extended.txt -O ->> 
 wget https://v.firebog.net/hosts/Easylist.txt -O ->> list.txt
 wget https://v.firebog.net/hosts/AdguardDNS.txt -O ->> list.txt
 
+npm run build && npm run start
+
 # filter non url content and eliminate duplicates
-sed -e 's/\r//' -e '/^0.0.0.0/!d' -e '/localhost/d' -e 's/0.0.0.0//' -e 's/ \+/\t/' -e 's/#.*$//' -e 's/[ \t]*$//' < list.txt | sort -u > list2.txt
-cat list2.txt | tr -d " \t" > adlist.txt
-rm -rf list.txt list2.txt
+cat list.txt | tr -d " \t" > adlist.txt
+rm -rf list.txt
 
 git add .
 git commit -m "update list"

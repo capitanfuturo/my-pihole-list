@@ -1,0 +1,10 @@
+version: "3.5"
+
+services:
+  pihole-adlist-builder:
+    build:
+      context: docker
+    image: pihole-adlist-builder
+
+    volumes:
+      - .:/code

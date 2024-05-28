@@ -1,0 +1,16 @@
+{
+  "name": "my-pihole-list",
+  "version": "1.0.0",
+  "description": "A simple tool to sanitize adblock files",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node lib/index.js"
+  },
+  "author": "capitanfuturo",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  }
+}
