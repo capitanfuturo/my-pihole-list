@@ -2,28 +2,35 @@ import fs from 'fs';
 import readline from 'readline';
 import events from 'events';
 
-const inputFileName = "adlist.txt";
-const outputFileName = "list.txt";
+const INPUT_FILENAME = "adlist.txt";
+const OUTPUT_FILENAME = "list.txt";
+const WHITE_LIST_FILENAME = "whitelist.txt";
 
 async function init(): Promise<void> {
-
     const list = new Set<string>();
-
     try {
         console.log("Started!");
+
+        console.log("Load white list");
+        const whiteList = await loadWhiteList();
+
+        // blacklist
+        console.log("Sanitized black list");
         const rl = readline.createInterface({
-            input: fs.createReadStream(inputFileName),
+            input: fs.createReadStream(INPUT_FILENAME),
             crlfDelay: Infinity
         });
-
+        // whitelist
+        console.log("Add white list");
         rl.on('line', (line) => {
             const result = processLine(line);
-            list.add(result);
+            if (!whiteList.has(line)) {
+                list.add(result);
+            }
         });
 
         await events.once(rl, 'close');
-        //TODO
-        var file = fs.createWriteStream(outputFileName);
+        var file = fs.createWriteStream(OUTPUT_FILENAME);
         list.forEach(function (v) { file.write(v + '\n'); });
         file.end();
 
@@ -31,6 +38,25 @@ async function init(): Promise<void> {
     } catch (err) {
         console.error(err);
     }
+}
+
+async function loadWhiteList(): Promise<Set<string>> {
+    const list = new Set<string>();
+
+    const rl = readline.createInterface({
+        input: fs.createReadStream(WHITE_LIST_FILENAME),
+        crlfDelay: Infinity
+    });
+
+    rl.on('line', (line) => {
+        const result = processLine(line);
+        if(!result.startsWith("#")){
+            list.add(result);
+        }
+    });
+
+    await events.once(rl, 'close');
+    return list;
 }
 
 function processLine(line: string): string {
@@ -49,11 +75,9 @@ function processLine(line: string): string {
     if (result.startsWith("127.0.0.1")) {
         result = result.replace("127.0.0.1", "");
     }
-
     if (result.startsWith("@@||")) {
         result = result.replace("@@||", "||");
     }
-
 
     /* MANIPULATE */
     // es: ~vsesdal.com##a[href*="://vsesdal.com/promo/"]
@@ -129,9 +153,6 @@ function processLine(line: string): string {
         result.startsWith("[")) {
         return "";
     }
-
-
-
     return result;
 }
 

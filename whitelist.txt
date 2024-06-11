@@ -1,0 +1,34 @@
+# Italy
+www.ansa.it
+
+# Google
+www.google.com
+gstatic.com
+fonts.gstatic.com
+
+# Spotify
+mobile-ap.spotify.com
+apresolve.spotify.com
+upgrade.scdn.com
+market.spotify.com
+spclient.wg.spotify.com
+audio-ake.spotify.com.edgesuite.net
+
+# Xbox
+v10.events.data.microsoft.com
+v20.events.data.microsoft.com
+attestation.xboxlive.com
+cert.mgt.xboxlive.com
+def-vef.xboxlive.com
+device.auth.xboxlive.com
+eds.xboxlive.com
+help.ui.xboxlive.com
+licensing.xboxlive.com
+notify.xboxlive.com
+title.auth.xboxlive.com
+title.mgt.xboxlive.com
+xbox.ipv6.microsoft.com
+xboxexperiencesprod.experimentation.xboxlive.com
+xflight.xboxlive.com
+xkms.xboxlive.com
+xsts.auth.xboxlive.com

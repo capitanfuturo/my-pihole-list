@@ -1,0 +1,9 @@
+# My Pi-Hole List
+
+A simple tool to update your adlist.
+
+## How to use
+
+`make pihole-adlist-builder`
+
+`make build`
