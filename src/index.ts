@@ -34,7 +34,7 @@ async function init(): Promise<void> {
 
         await events.once(rl, 'close');
         var file = fs.createWriteStream(OUTPUT_FILENAME);
-        list.forEach(function (v) { file.write(v + '\n'); });
+        Array.from(list).sort().forEach(function (v) { file.write(v + '\n'); });
         file.end();
 
         console.log("Finished!");
