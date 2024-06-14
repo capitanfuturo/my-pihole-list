@@ -1,9 +1,14 @@
 # My Pi-Hole List
 
-A simple tool to update your adlist.
+A simple tool to update your adlist. You can fork it and modify it.
+
+## Requirements
+
+- docker
+- docker compose
 
 ## How to use
 
-`make pihole-adlist-builder`
-
-`make build`
+1. Fork the repo
+2. `make pihole-adlist-builder` will create and run a container with all you need to develop and use this project. After the command you will be logged into che container.
+3. `make build` will compose your new adlist file

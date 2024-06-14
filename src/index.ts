@@ -5,6 +5,7 @@ import events from 'events';
 const INPUT_FILENAME = "adlist.txt";
 const OUTPUT_FILENAME = "list.txt";
 const WHITE_LIST_FILENAME = "whitelist.txt";
+const PERSONAL_WHITE_LIST_FILENAME = "personal_whitelist.txt";
 
 async function init(): Promise<void> {
     const list = new Set<string>();
@@ -12,7 +13,9 @@ async function init(): Promise<void> {
         console.log("Started!");
 
         console.log("Load white list");
-        const whiteList = await loadWhiteList();
+        const whiteList = new Set<string>();
+        (await loadWhiteList(WHITE_LIST_FILENAME)).forEach(x=>whiteList.add(x));
+        (await loadWhiteList(PERSONAL_WHITE_LIST_FILENAME)).forEach(x=>whiteList.add(x));
 
         // blacklist
         console.log("Sanitized black list");
@@ -40,11 +43,11 @@ async function init(): Promise<void> {
     }
 }
 
-async function loadWhiteList(): Promise<Set<string>> {
+async function loadWhiteList(filename: string): Promise<Set<string>> {
     const list = new Set<string>();
 
     const rl = readline.createInterface({
-        input: fs.createReadStream(WHITE_LIST_FILENAME),
+        input: fs.createReadStream(filename),
         crlfDelay: Infinity
     });
 
@@ -56,6 +59,7 @@ async function loadWhiteList(): Promise<Set<string>> {
     });
 
     await events.once(rl, 'close');
+
     return list;
 }
 

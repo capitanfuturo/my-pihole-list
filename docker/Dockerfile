@@ -1,6 +1,6 @@
-FROM node:18
+FROM node:18.20
 
-COPY ./scripts/ /scripts
+COPY ./scripts/* /scripts/
 RUN chmod +x /scripts/*
 
 WORKDIR /code
