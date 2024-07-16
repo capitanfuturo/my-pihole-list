@@ -5,6 +5,24 @@ www.ansa.it
 www.google.com
 gstatic.com
 fonts.gstatic.com
+accounts.google.com
+mail.google.com
+play.google.com
+www.youtube.com
+youtube.com
+clients4.google.com 
+clients2.google.com
+s.youtube.com 
+video-stats.l.google.com
+www.googleapis.com 
+youtubei.googleapis.com
+oauthaccountmanager.googleapis.com
+android.clients.google.com
+reminders-pa.googleapis.com firestore.googleapis.com
+gstaticadssl.l.google.com
+googleapis.l.google.com
+dl.google.com
+redirector.gvt1.com
 
 # Spotify
 mobile-ap.spotify.com
@@ -14,7 +32,17 @@ market.spotify.com
 spclient.wg.spotify.com
 audio-ake.spotify.com.edgesuite.net
 
-# Xbox
+# Microsoft
+outlook.office365.com 
+products.office.com 
+c.s-microsoft.com 
+i.s-microsoft.com 
+login.live.com 
+login.microsoftonline.com
+dl.delivery.mp.microsoft.com 
+geo-prod.do.dsp.mp.microsoft.com 
+displaycatalog.mp.microsoft.com
+msedge.api.cdp.microsoft.com
 v10.events.data.microsoft.com
 v20.events.data.microsoft.com
 attestation.xboxlive.com
@@ -35,3 +63,13 @@ xsts.auth.xboxlive.com
 
 # Reddit
 reddit.com
+
+# Meta
+graph.whatsapp.com
+graph.facebook.com
+
+# Others
+hcaptcha.com
+recaptcha.com
+amazon.com
+bing.com
