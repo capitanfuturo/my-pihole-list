@@ -1,10 +1,14 @@
 # Italy
 www.ansa.it
+ansa.it
+sport.sky.it
 
 # Google
 www.google.com
 gstatic.com
 fonts.gstatic.com
+fonts.googleapis.com
+imasdk.googleapis.com
 accounts.google.com
 mail.google.com
 play.google.com
